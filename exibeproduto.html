@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML Básico</title>
+</head>
+<body>
+    <header>
+        <h1 th:text="'Página do produto '+ ${prod.nome}">Página do produto X</h1>
+    </header>
+
+    <section id="produto">
+        <h2>Produto</h2>
+        <p th:text="${prod.nome}">Nome do produto</p>
+    </section>
+
+    <section id="preco">
+        <h2>Preço do produto</h2>
+        <p th:text="'R$' + ${prod.preco}">Preço do produto</p>
+    </section>
+</body>
+</html>
